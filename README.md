@@ -12,6 +12,12 @@ Simple Linux X11 temporary key remapper with tray icon and hotkey toggling.
 
 2. Run `robohotkey hotkey_file.rbk`
 
+3. Optionally, add the robohotkey mime type.
+
+    Copy `robohotkey.xml` into `~/.local/share/mime/application/`
+
+    Run `update-mime-database ~/.local/share/mime`
+
 ## Dependencies
 
 Python 3: [Download link](https://www.python.org/downloads/)
