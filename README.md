@@ -1,6 +1,6 @@
 # Robohotkey
 
-Simple Linux X11 temporary key remapper.
+Simple Linux X11 temporary key remapper with tray icon and hotkey toggling.
 
 ## Usage
 
