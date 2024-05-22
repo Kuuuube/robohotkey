@@ -4,7 +4,7 @@ Simple Linux temporary key remapper.
 
 ## Usage
 
-1. Run `robohotkey.py`
+1. Run `robohotkey your_config_file.rbk`
 
 ## Dependencies
 
@@ -15,7 +15,3 @@ Python `pystray` and `pillow` modules: To install then, enter the following comm
 ```
 pip install pystray pillow
 ```
-
-## Notes
-
-Currently unfinished.
