@@ -10,7 +10,7 @@ Simple Linux X11 temporary key remapper.
 
     Run `xmodmap -pke` for a list of all keycodes and keynames.
 
-2. Run `robohotkey your_hotkey_file.rbk`
+2. Run `robohotkey hotkey_file.rbk`
 
 ## Dependencies
 
