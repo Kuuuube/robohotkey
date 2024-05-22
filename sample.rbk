@@ -1,0 +1,5 @@
+// keycode on the left, output key name on the right
+// This sets scroll lock to left alt
+78 -> Alt_L
+
+// Run `xmodmap -pke` to see a full list of keycodes and key names
