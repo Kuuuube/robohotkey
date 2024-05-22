@@ -18,7 +18,7 @@ file_lines = list(map(str.strip, open(filepath, "r", encoding="UTF-8").readlines
 hotkeys = []
 hotkey = collections.namedtuple('hotkey', ['input_key', 'output_key'])
 for file_line in file_lines:
-    if file_line.startswith("//"):
+    if file_line.strip().startswith("//"):
         continue
     hotkey_line = file_line.split("->")
     hotkeys.append(hotkey(input_key = hotkey_line[0].strip(), output_key = hotkey_line[1].strip()))
