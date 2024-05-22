@@ -4,7 +4,13 @@ Simple Linux temporary key remapper.
 
 ## Usage
 
-1. Run `robohotkey your_config_file.rbk`
+1. Write a hotkey file.
+
+    Check `sample.rbk` to see an example.
+
+    Run `xmodmap -pke` for a list of all keycodes and keynames.
+
+2. Run `robohotkey your_hotkey_file.rbk`
 
 ## Dependencies
 
