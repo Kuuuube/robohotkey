@@ -4,17 +4,30 @@ import time
 import sys
 import base64
 import io
+import collections
 import pystray
 import PIL.Image
 
 state = False
 
+filepath = sys.argv[1]
+file_lines = list(map(str.strip, open(filepath, "r", encoding="UTF-8").readlines()))
+
+hotkeys = []
+hotkey = collections.namedtuple('hotkey', ['input_key', 'output_key'])
+for file_line in file_lines:
+    if file_line.startswith("//"):
+        continue
+    hotkey_line = file_line.split("->")
+    hotkeys.append(hotkey(input_key = hotkey_line[0].strip(), output_key = hotkey_line[1].strip()))
+
 def hotkeys_enabled():
-    global state
+    global state, hotkeys
     if state == True:
         subprocess.run("setxkbmap", shell = True)
     else:
-        subprocess.run("xmodmap -e 'keycode 78 = Alt_L'", shell = True)
+        for hotkey in hotkeys:
+            subprocess.run("xmodmap -e 'keycode " + hotkey.input_key + " = " + hotkey.output_key + "'", shell = True)
     state = not state
 
 hotkeys_enabled()
