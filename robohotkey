@@ -12,7 +12,19 @@ import PIL.Image
 
 state = False
 
+def help_message():
+    print("robohotkey: missing hotkey file")
+    print("Usage: robohotkey hotkey_file.rbk")
+    sys.exit()
+
+if len(sys.argv) < 2:
+    help_message()
+
 filepath = sys.argv[1]
+
+if filepath in ["-h", "--help", "-help", "--h"]:
+    help_message()
+
 file_lines = list(map(str.strip, open(filepath, "r", encoding="UTF-8").readlines()))
 
 hotkeys = []
