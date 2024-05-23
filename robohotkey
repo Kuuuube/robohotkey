@@ -41,7 +41,7 @@ def hotkeys_enabled():
         subprocess.run("setxkbmap", shell = True)
     else:
         for hotkey in hotkeys:
-            subprocess.run("xmodmap -e 'keycode " + hotkey.input_key + " = " + hotkey.output_key + "'", shell = True)
+            subprocess.run("xmodmap -e 'keysym " + hotkey.input_key + " = " + hotkey.output_key + "'", shell = True)
     state = not state
 
 hotkeys_enabled()
