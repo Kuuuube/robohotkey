@@ -36,8 +36,14 @@ for file_line in file_lines:
     hotkeys.append(hotkey(input_key = hotkey_line[0].strip(), output_key = hotkey_line[1].strip()))
 
 def enable_hotkeys(hotkeys):
-    subprocess.run("xmodmap -e 'clear Lock'", shell = True)
     for hotkey in hotkeys:
+        match hotkey.input_key:
+            case 'Caps_Lock':
+                subprocess.run("xmodmap -e 'clear Lock'", shell = True)
+            case 'Num_Lock':
+                subprocess.run("xmodmap -e 'clear mod2'", shell = True)
+            case _:
+                pass
         subprocess.run("xmodmap -e 'keysym " + hotkey.input_key + " = " + hotkey.output_key + "'", shell = True)
 
 def disable_hotkeys():
