@@ -1,6 +1,6 @@
-// keycode on the left, output key name on the right
-// keycode -> keyname
+// input key name on the left, output key name on the right
+// keyname -> keyname
 // The below hotkey sets scroll lock to left alt
-78 -> Alt_L
+Scroll_Lock -> Alt_L
 
-// Run `xmodmap -pke` to see a full list of keycodes and key names
+// Run `xmodmap -pke` to see a full list of keycodes and key names (only the key names on the right side are relevant)
