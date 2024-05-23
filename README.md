@@ -8,7 +8,7 @@ Simple Linux X11 temporary key remapper with tray icon and hotkey toggling.
 
     Check `sample.rbk` to see an example.
 
-    Run `xmodmap -pke` for a list of all keycodes and keynames.
+    Check [Keys List](./key_list.md) or run `xmodmap -pke` for a list of all keycodes and keynames.
 
 2. Run `robohotkey hotkey_file.rbk`
 
