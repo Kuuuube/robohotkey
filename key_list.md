@@ -177,7 +177,41 @@
 | KP_Decimal | |
 | KP_Divide | |
 | KP_0 through 9 | |
-| F1 through 35 | F11 through 20 have synonyms L1 through 10; F21 through 35 have synonyms R1 through 15 |
+| F1 | |
+| F2 | |
+| F3 | |
+| F4 | |
+| F5 | |
+| F6 | |
+| F7 | |
+| F8 | |
+| F9 | |
+| F10 | |
+| F11 | L1 is a synonym |
+| F12 | L2 is a synonym |
+| F13 | L3 is a synonym |
+| F14 | L4 is a synonym |
+| F15 | L5 is a synonym |
+| F16 | L6 is a synonym |
+| F17 | L7 is a synonym |
+| F18 | L8 is a synonym |
+| F19 | L9 is a synonym |
+| F20 | L10 is a synonym |
+| F21 | R1 is a synonym |
+| F22 | R2 is a synonym |
+| F23 | R3 is a synonym |
+| F24 | R4 is a synonym |
+| F25 | R5 is a synonym |
+| F26 | R6 is a synonym |
+| F27 | R7 is a synonym |
+| F28 | R8 is a synonym |
+| F29 | R9 is a synonym |
+| F30 | R10 is a synonym |
+| F31 | R11 is a synonym |
+| F32 | R12 is a synonym |
+| F33 | R13 is a synonym |
+| F34 | R14 is a synonym |
+| F35 | R15 is a synonym |
 | Shift_L | Left shift |
 | Shift_R | Right shift |
 | Control_L | Left control |
