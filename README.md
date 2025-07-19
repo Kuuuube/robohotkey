@@ -12,7 +12,7 @@ Simple Linux X11 temporary key remapper with tray icon and hotkey toggling.
 
 3. Optionally, add the robohotkey mime type.
 
-    Copy `robohotkey.xml` into `~/.local/share/mime/application/`
+    Copy `robohotkey.xml` into `~/.local/share/mime/packages/`
 
     Run `update-mime-database ~/.local/share/mime`
 
